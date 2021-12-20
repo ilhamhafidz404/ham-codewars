@@ -8,14 +8,16 @@
   </head>
   <body>
     <script>
-     const squareSum = numbers =>{
-      let total= 0;
-      numbers.forEach((number) =>{
-        return total += number**2
-      })
-      console.log(total)
+    const findNeedle = haystack => {
+      let location= 0;
+      for(i = 0; i <= haystack.length-1; i++) {
+        if(haystack[i] == 'needle'){
+          location = i
+        }
+      }
+      return console.log("found the needle at position "+location);
     }
-    squareSum([1,2,2])
+    findNeedle(['fwefew', 'dweewf', 'ewgwege', 'fwefewf', 'needle', 'fwefewf'])
     </script>
   </body>
 </html>
