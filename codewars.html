@@ -8,17 +8,17 @@
   </head>
   <body>
     <script>
-      const find_average = array => {
-        let totalArray= 0;
-        array.forEach(arr =>{
-          return totalArray += arr
-        })
-        if(array.length === 0){
-          return 0
-        }
-        return totalArray = totalArray / array.length
+      function arrayPlusArray(arr1, arr2) {
+        let total= 0;
+        arr1.forEach(arr =>{
+          total += arr
+        });
+        arr2.forEach(arr =>{
+          total += arr
+        });
+        console.log(total);
       }
-      find_average([])
+      arrayPlusArray([1,2,42,21], [2,4321,21])
     </script>
   </body>
 </html>
