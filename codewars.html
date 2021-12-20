@@ -8,19 +8,15 @@
   </head>
   <body>
     <script>
-    const findNeedle = haystack => {
-      let location= 0;
-      for(i = 0; i <= haystack.length-1; i++) {
-        if(haystack[i] == 'needle'){
-          location = i
-        }
+    function isDivisible(n, x, y) {
+      let checkX= n/x, checkY= n/y
+      if( Number.isInteger(checkX) && Number.isInteger(checkY)){
+        return true
+      } else{
+        return false
       }
-      return console.log("found the needle at position "+location);
     }
-    // function findNeedle(haystack) {
-    //   return "found the needle at position " + haystack.indexOf("needle");
-    // }
-    findNeedle(['fwefew', 'dweewf', 'ewgwege', 'fwefewf', 'needle', 'fwefewf'])
+    console.log(isDivisible(3,3,2))
     </script>
   </body>
 </html>
