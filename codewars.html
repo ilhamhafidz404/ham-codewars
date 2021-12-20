@@ -8,15 +8,16 @@
   </head>
   <body>
     <script>
-      const reverseSeq = n => {
-        let arr= []
-        for(var i= n; i > 0; --i){
-          arr.push(i)
-        }
-        console.log(arr)
-      };
+      function sumMix(x){
+        let total= 0;
+        x.forEach(item =>{
+          
+          total += parseInt(item);
+        });
+        console.log(total);
+      }
 
-      reverseSeq(5)
+      sumMix([9, 3, '7', '3'])
     </script>
   </body>
 </html>
