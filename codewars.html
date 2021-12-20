@@ -8,17 +8,15 @@
   </head>
   <body>
     <script>
-      function arrayPlusArray(arr1, arr2) {
-        let total= 0;
-        arr1.forEach(arr =>{
-          total += arr
-        });
-        arr2.forEach(arr =>{
-          total += arr
-        });
-        console.log(total);
-      }
-      arrayPlusArray([1,2,42,21], [2,4321,21])
+      const reverseSeq = n => {
+        let arr= []
+        for(var i= n; i > 0; --i){
+          arr.push(i)
+        }
+        console.log(arr)
+      };
+
+      reverseSeq(5)
     </script>
   </body>
 </html>
