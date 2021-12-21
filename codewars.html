@@ -8,13 +8,24 @@
   </head>
   <body>
     <script>
+      // function drawStairs(n) {
+      //   let space= " ";
+      //   for(let i = 0; i < n; i++){
+      //     let str = `${space.repeat(i)}I`;
+      //     console.log( str)
+      //   }
+      //   console.log(str)
+      // }
       function drawStairs(n) {
-        let space= " ";
-        for(let i = 0; i < n; i++){
-          let str = `${space.repeat(i)}I`;
-          console.log( str)
+        if (n > 1){ 
+          let str = ''
+          for (let i = 1; i <n; i++){
+            str +=`I\n${' '.repeat(i)}`
+          }
+          return str + 'I';
+        } else {
+          return 'I';
         }
-        console.log(str)
       }
       drawStairs(5)
     </script>
