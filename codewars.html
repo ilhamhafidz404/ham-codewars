@@ -8,14 +8,15 @@
   </head>
   <body>
     <script>
-      function getAverage(marks){
-        let total= 0;
-        marks.forEach(mark=>{
-          return total += mark;
-        });
-        total= total / marks.length
-        return Math.floor(total);
+      function drawStairs(n) {
+        let space= " ";
+        for(let i = 0; i < n; i++){
+          let str = `${space.repeat(i)}I`;
+          console.log( str)
+        }
+        console.log(str)
       }
+      drawStairs(5)
     </script>
   </body>
 </html>
