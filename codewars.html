@@ -8,16 +8,14 @@
   </head>
   <body>
     <script>
-      function sumMix(x){
+      function getAverage(marks){
         let total= 0;
-        x.forEach(item =>{
-          
-          total += parseInt(item);
+        marks.forEach(mark=>{
+          return total += mark;
         });
-        console.log(total);
+        total= total / marks.length
+        return Math.floor(total);
       }
-
-      sumMix([9, 3, '7', '3'])
     </script>
   </body>
 </html>
