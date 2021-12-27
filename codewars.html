@@ -8,26 +8,32 @@
   </head>
   <body>
     <script>
-      // function drawStairs(n) {
-      //   let space= " ";
-      //   for(let i = 0; i < n; i++){
-      //     let str = `${space.repeat(i)}I`;
-      //     console.log( str)
-      //   }
-      //   console.log(str)
+      // terminal game move
+      const move = (position, roll) => position + (roll*2)
+
+      // Simple Multiplication
+      const simpleMUltipilication= number => (number%2 == 1) ? number*=9 : number*=8
+
+      // array matrix in js
+
+
+
+
+      // the great zuckening 2019
+
+      // let bannedTexts= [/anjing/, /kontol/, /ngentot/]
+      // const whisper = (say) =>{
+      //   bannedTexts.forEach(bannedText => {
+      //     if(bannedText.test(say)){
+      //       say = 'Text Anda di Banned'
+      //     }
+      //   });
+      //   return console.log(say)
       // }
-      function drawStairs(n) {
-        if (n > 1){ 
-          let str = ''
-          for (let i = 1; i <n; i++){
-            str +=`I\n${' '.repeat(i)}`
-          }
-          return str + 'I';
-        } else {
-          return 'I';
-        }
-      }
-      drawStairs(5)
+      
+      
+      // let bannedTexts= /anjing|asu/gi
+      // const whisper = (say) => bannedTexts.test(say) ? `Text di banned ${say.match(bannedTexts)}` : say
     </script>
   </body>
 </html>
