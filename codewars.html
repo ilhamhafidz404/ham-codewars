@@ -8,16 +8,8 @@
   </head>
   <body>
     <script>
-      // Divide and Conquer (7 kyu)
-      function divCon(x) {
-        let result = 0;
-        x.forEach((item) => {
-          typeof item == "number"
-            ? (result += item)
-            : (result -= parseInt(item));
-        });
-        return result;
-      }
+      // ES6 string addition (8 kyu)
+      const joinStrings = (string1, string2) => `${string1} ${string2}`;
     </script>
   </body>
 </html>
