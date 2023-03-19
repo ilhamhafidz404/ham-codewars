@@ -8,16 +8,18 @@
   </head>
   <body>
     <script>
-      // Palindromes Here and There (7 kyu)
-      function convertPalindromes(numbers) {
-        let reverseNumber,
-          result = [];
+      // Band name generator (7 kyu)
+      function bandNameGenerator(str) {
+        const firstStr = str[0];
+        const lastStr = str[str.length - 1];
+        let capitalize = str.charAt(0).toUpperCase();
+        let result;
 
-        numbers.forEach((number) => {
-          reverseNumber = number.toString().split("").reverse().join("");
-          number == reverseNumber ? result.push(1) : result.push(0);
-        });
-
+        if (firstStr != lastStr) {
+          result = "The " + capitalize + str.slice(1);
+        } else {
+          result = capitalize + str.slice(1, -1) + str;
+        }
         return result;
       }
     </script>
