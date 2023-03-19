@@ -8,8 +8,47 @@
   </head>
   <body>
     <script>
-      // Remove String Spaces
-      const noSpace = (x) => x.replace(/\s/g, "");
+      // Alphabet war (7 kyu)
+      function alphabetWar(fight) {
+        let leftSidePoint = 0,
+          rightSidePoint = 0;
+        for (let i = 0; i < fight.length; i++) {
+          switch (fight[i]) {
+            case "w":
+              leftSidePoint += 4;
+              break;
+            case "p":
+              leftSidePoint += 3;
+              break;
+            case "b":
+              leftSidePoint += 2;
+              break;
+            case "s":
+              leftSidePoint += 1;
+              break;
+            case "m":
+              rightSidePoint += 4;
+              break;
+            case "q":
+              rightSidePoint += 3;
+              break;
+            case "d":
+              rightSidePoint += 2;
+              break;
+            case "z":
+              rightSidePoint += 1;
+              break;
+          }
+        }
+
+        if (leftSidePoint > rightSidePoint) {
+          return "Left side wins!";
+        } else if (leftSidePoint < rightSidePoint) {
+          return "Right side wins!";
+        } else {
+          return "Let's fight again!";
+        }
+      }
     </script>
   </body>
 </html>
