@@ -8,18 +8,14 @@
   </head>
   <body>
     <script>
-      // Band name generator (7 kyu)
-      function bandNameGenerator(str) {
-        const firstStr = str[0];
-        const lastStr = str[str.length - 1];
-        let capitalize = str.charAt(0).toUpperCase();
-        let result;
-
-        if (firstStr != lastStr) {
-          result = "The " + capitalize + str.slice(1);
-        } else {
-          result = capitalize + str.slice(1, -1) + str;
-        }
+      // Divide and Conquer (7 kyu)
+      function divCon(x) {
+        let result = 0;
+        x.forEach((item) => {
+          typeof item == "number"
+            ? (result += item)
+            : (result -= parseInt(item));
+        });
         return result;
       }
     </script>
