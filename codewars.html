@@ -8,46 +8,17 @@
   </head>
   <body>
     <script>
-      // Alphabet war (7 kyu)
-      function alphabetWar(fight) {
-        let leftSidePoint = 0,
-          rightSidePoint = 0;
-        for (let i = 0; i < fight.length; i++) {
-          switch (fight[i]) {
-            case "w":
-              leftSidePoint += 4;
-              break;
-            case "p":
-              leftSidePoint += 3;
-              break;
-            case "b":
-              leftSidePoint += 2;
-              break;
-            case "s":
-              leftSidePoint += 1;
-              break;
-            case "m":
-              rightSidePoint += 4;
-              break;
-            case "q":
-              rightSidePoint += 3;
-              break;
-            case "d":
-              rightSidePoint += 2;
-              break;
-            case "z":
-              rightSidePoint += 1;
-              break;
-          }
-        }
+      // Palindromes Here and There (7 kyu)
+      function convertPalindromes(numbers) {
+        let reverseNumber,
+          result = [];
 
-        if (leftSidePoint > rightSidePoint) {
-          return "Left side wins!";
-        } else if (leftSidePoint < rightSidePoint) {
-          return "Right side wins!";
-        } else {
-          return "Let's fight again!";
-        }
+        numbers.forEach((number) => {
+          reverseNumber = number.toString().split("").reverse().join("");
+          number == reverseNumber ? result.push(1) : result.push(0);
+        });
+
+        return result;
       }
     </script>
   </body>
