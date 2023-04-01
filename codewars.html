@@ -8,8 +8,11 @@
   </head>
   <body>
     <script>
-      // ES6 string addition (8 kyu)
-      const joinStrings = (string1, string2) => `${string1} ${string2}`;
+      // Contamination #1 -String- (8 kyu)
+      function contamination(text, char){
+        let result= char.repeat(text.length);
+        return result;
+      }
     </script>
   </body>
 </html>
