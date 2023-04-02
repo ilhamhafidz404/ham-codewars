@@ -8,9 +8,12 @@
   </head>
   <body>
     <script>
-      // My head is at the wrong end! (8 kyu)
-      function fixTheMeerkat(arr) {
-       return arr.reverse()
+      // Largest Elements (7 kyu)
+      function largest(n, array) {
+        const descendingArr = array.sort((a, b) => b - a);
+        const sliceArr = descendingArr.slice(0, n);
+        const result = sliceArr.sort((a, b) => a - b)
+        return result;
       }
     </script>
   </body>
