@@ -8,34 +8,8 @@
   </head>
   <body>
     <script>
-      // You Got Change? (7 kyu)
-      function giveChange(amount) {
-        let bills = [0, 0, 0, 0, 0, 0]; // initialize array with zeros
-        if (amount >= 100) {
-          bills[5] = Math.floor(amount / 100);
-          amount %= 100;
-        }
-        if (amount >= 50) {
-          bills[4] = Math.floor(amount / 50);
-          amount %= 50;
-        }
-        if (amount >= 20) {
-          bills[3] = Math.floor(amount / 20);
-          amount %= 20;
-        }
-        if (amount >= 10) {
-          bills[2] = Math.floor(amount / 10);
-          amount %= 10;
-        }
-        if (amount >= 5) {
-          bills[1] = Math.floor(amount / 5);
-          amount %= 5;
-        }
-        if (amount >= 1) {
-          bills[0] = amount;
-        }
-        return bills;
-      }
+      // Disemvowel Trolls (7 kyu)
+      const disemvowel = (str) => str.replace(/[aeiou]/gi, "");
     </script>
   </body>
 </html>
