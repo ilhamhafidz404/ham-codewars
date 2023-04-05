@@ -8,12 +8,15 @@
   </head>
   <body>
     <script>
-      // Between Extremes (7 kyu)
-      function betweenExtremes(numbers) {
-          let min= Math.min.apply(Math, numbers);
-          let max= Math.max.apply(Math, numbers);
-
-          return max - min;
+      // Sum even numbers (7 kyu)
+      function sumEvenNumbers(input) {
+        let result= 0;
+        input.forEach((item)=>{
+          if(item %2 == 0){
+            result += item;
+          }
+        });
+        return result;
       }
     </script>
   </body>
