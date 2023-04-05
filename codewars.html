@@ -8,12 +8,12 @@
   </head>
   <body>
     <script>
-      // Largest Elements (7 kyu)
-      function largest(n, array) {
-        const descendingArr = array.sort((a, b) => b - a);
-        const sliceArr = descendingArr.slice(0, n);
-        const result = sliceArr.sort((a, b) => a - b)
-        return result;
+      // Between Extremes (7 kyu)
+      function betweenExtremes(numbers) {
+          let min= Math.min.apply(Math, numbers);
+          let max= Math.max.apply(Math, numbers);
+
+          return max - min;
       }
     </script>
   </body>
