@@ -8,8 +8,28 @@
   </head>
   <body>
     <script>
-      // Green Glass Door (7 kyu)
-      const stepThroughWith = (s) =>  (/(.)\1/).test(s) }
+      // Running out of space (7 kyu)
+      
+      // cara bodoh
+      function spacey(array) {
+        let result= [array[0]];
+        array.forEach((el, index) =>{
+            if(index > 0){
+              result.push(result[index-1] += el);
+            }
+        })
+
+        result.unshift(array[0])
+        result.splice(-1,1)
+
+        return result;
+      }
+      
+      // cara mudah
+      function spacey(array){
+        let result =''
+        return array.map(item=> result+= item)
+      }
     </script>
   </body>
 </html>
