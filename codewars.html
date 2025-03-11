@@ -8,11 +8,22 @@
   </head>
   <body>
     <script>
-      // Remove the Time (8 kyu)
-      
-     function shortenToDate(longDate) {
-        return longDate.replace(/(,).*/, '')
+      // Vowel Count (7 kyu)
+
+      function getCount(str) {
+        let pattern = /a|i|u|e|o/g;
+        let result = str.match(pattern);
+
+        return result ? result.length : 0;
       }
+
+      // // Chat GPT VERSION
+      // const getCount = str => (str.match(/[aiueo]/g) || []).length;
+
+      console.log(getCount("abracadabra"));
+      console.log(getCount("pear tree"));
+      console.log(getCount("o a kak ushakov lil vo kashu kakao"));
+      console.log(getCount("my pyx"));
     </script>
   </body>
 </html>
